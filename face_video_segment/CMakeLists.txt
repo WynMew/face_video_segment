@@ -1,4 +1,5 @@
 # Source
+include(/home/miaoqianwen/cmake/Modules/FindProtobuf.cmake)
 set(FVS_SRC 
 	landmarks_unit.cpp
 	video_reader_unit2.cpp
