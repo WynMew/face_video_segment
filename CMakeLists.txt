@@ -1,11 +1,21 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(face_video_segment)
 
+# add FindProtobuf.cmake
+include(/home/miaoqianwen/cmake/Modules/FindProtobuf.cmake)
+
 # Version
 # ===================================================
 set(FACE_VIDEO_SEGMENT_MAJOR_VERSION 0)
 set(FACE_VIDEO_SEGMENT_MINOR_VERSION 8)
 set(FACE_VIDEO_SEGMENT_VERSION ${FACE_VIDEO_SEGMENT_MAJOR_VERSION}.${FACE_VIDEO_SEGMENT_MINOR_VERSION})
+
+#add 
+set(OpenCV_DIR "/home/miaoqianwen/opencv3/install/share/OpenCV")
+set(dlib_DIR "/home/miaoqianwen/dlib/install/lib/cmake/dlib")
+set(protobuf_DIR "/home/miaoqianwen/protobuf/install/lib/x86_64-linux-gnu/cmake/protobuf")
+set(Qt5Widgets_DIR "/usr/local/Qt-5.8.1/lib/cmake/Qt5Widgets")
+set(video_segment_DIR "/home/miaoqianwen/VideoSeg/install/lib/cmake/video_segment")
 
 # Global configurations
 # ===================================================
